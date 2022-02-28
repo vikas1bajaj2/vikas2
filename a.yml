@@ -1,6 +1,9 @@
 ---
-- name: This sets up an httpd webserver
+- name: This sets up an httpd and nginx webserver
   hosts: all
   tasks:
   - name: Install apache packages 
-    yum: name=nginx state=present
+    yum: name={{item}} state=present
+    with_items: 
+    - httpd
+    - nginx
