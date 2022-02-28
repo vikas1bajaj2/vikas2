@@ -3,4 +3,4 @@
   hosts: all
   tasks:
   - name: Install apache packages 
-    yum: name=ngnix state=present
+    yum: name=nginx state=present
