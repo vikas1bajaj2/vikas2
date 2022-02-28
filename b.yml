@@ -1,0 +1,9 @@
+---
+- name: This sets up an httpd and nginx webserver
+  hosts: all
+  tasks:
+  - name: list the version
+    command: rpm -qa | egrep -i 'httpd|nginx' > /opt/vikas/update4
+    register: output_check
+  - name: atrifacts
+    command: cat /opt/vikas/update4
