@@ -3,4 +3,4 @@
   hosts: all
   tasks:
   - name: check uptime
-    command: uptime
+    command: hostname
