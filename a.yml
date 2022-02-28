@@ -1,14 +1,6 @@
 ---
-  name: install httpd
-  hosts: all
-  
-  tasks: lets install httpd
-    - name: yum
-    
----
 - name: This sets up an httpd webserver
   hosts: all
   tasks:
   - name: Install apache packages 
     yum: name=httpd state=present
-      
