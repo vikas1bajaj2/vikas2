@@ -5,5 +5,5 @@
   - name: list the version
     shell: rpm -qa | egrep -i 'httpd|nginx' > /opt/vikas/update3
   - name: o/p of file
-    shell: cat /opt/vikas/update3
+    command: cat /opt/vikas/update3
   
