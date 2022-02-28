@@ -6,4 +6,4 @@
     command: rpm -qa | egrep -i 'httpd|nginx' > /opt/vikas/update3
     register: output_check
   - name: atrifacts
-    command: cat /opt/vikas/update4
+    command: cat /opt/vikas/update3
