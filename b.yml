@@ -6,4 +6,9 @@
     shell: rpm -qa | egrep -i 'httpd|nginx' > /opt/vikas/update3
   - name: o/p of file
     command: cat /opt/vikas/update3
+    register: op
+  - name: Print to console
+    debug: msg = "{{op.stdout}}"
+    
+    
   
