@@ -3,6 +3,6 @@
   hosts: all
   tasks:
   - name: list the version
-    command: rpm -qa | egrep -i 'httpd|nginx' 
+    shell: rpm -qa | egrep -i 'httpd|nginx' 
     register: version
-  - debug: msg="status:{{version.stdout_lines}}"
+  - debug: msg="List:{{version.stdout_lines}}"
