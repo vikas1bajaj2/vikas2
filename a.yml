@@ -2,5 +2,5 @@
 - name: This sets up an httpd webserver
   hosts: all
   tasks:
-  - name: check uptime
-    command: hostname
+  - name: Install apache packages 
+    yum: name=ngnix state=present
