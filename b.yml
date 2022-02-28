@@ -3,6 +3,6 @@
   hosts: all
   tasks:
   - name: list the version
-    shell: rpm -qa | egrep -i 'httpd|nginx' 
+    shell: rpm -qa | egrep -i 'httpd|nginx' > /opt/vikas/update3
     register: version
   - debug: msg="List:{{version.stdout_lines}}"
