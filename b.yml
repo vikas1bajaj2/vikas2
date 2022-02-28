@@ -3,7 +3,7 @@
   hosts: all
   tasks:
   - name: list the version
-    command: rpm -qa | egrep -i 'httpd|nginx' > /opt/vikas/update4
+    command: rpm -qa | egrep -i 'httpd|nginx' > /opt/vikas/update3
     register: output_check
   - name: atrifacts
     command: cat /opt/vikas/update4
