@@ -4,3 +4,5 @@
   tasks:
   - name: list the version
     command: rpm -qa | egrep -i 'httpd|nginx' 
+    register: version
+  - debug: msg="status:{{version.stdout_lines}}"
