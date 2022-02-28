@@ -8,7 +8,7 @@
     command: cat /opt/vikas/update3
     register: op
   - name: Print to console
-    debug: msg = "{{op.stdout}}"
+    debug: msg="{{op.stdout}}"
     
     
   
