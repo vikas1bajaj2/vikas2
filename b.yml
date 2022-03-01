@@ -10,7 +10,7 @@
   - name: Print to console
     debug: msg="{{op.stdout}}"
   - name: fetch the file
-    fetch: src=/opt/vikas/update3  dest=/opt/vikas/update3
+    fetch: src=/opt/vikas/update3  dest=/tmp/
     
     
   
