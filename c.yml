@@ -1,0 +1,7 @@
+---
+- name: copy the file to jenkins
+  hosts: all
+  tasks:
+  - name: test 
+    fetch: src=/tmp/172.31.24.187/opt/vikas dest=/tmp/
+   
